@@ -13,8 +13,8 @@ if( ${HDF5_IS_PARALLEL} )
 endif()
 message(  ${Pyablo_HDF5_TARGETS} )
 
-find_package(pybind11 REQUIRED)
-
+# find_package(pybind11 REQUIRED)
+add_subdirectory(external/pybind11)
 include_directories(includes)
 include_directories(external/pugixml/src)
 include_directories(external/stb)
